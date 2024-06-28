@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Shopping.Data.Entities.Country>
+﻿@model IEnumerable<Shopping.Data.Entities.DocumentType>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,10 +6,11 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
 
 
+<h1>Tipo Documentos</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-outline-primary">Nuevo</a>
-</p> <br />
+</p>
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default">
@@ -21,10 +22,10 @@
                     <thead>
                         <tr>
                             <th>
-                                @Html.DisplayNameFor(model => model.Name)
+                                @Html.DisplayNameFor(model => model.Description)
                             </th>
-                           
-                            <th></th>
+
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,9 +33,9 @@
                         {
                             <tr>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Name)
+                                    @Html.DisplayFor(modelItem => item.Description)
                                 </td>
-                            
+
                                 <td>
                                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning">Editar</a>
                                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info">Detalles</a>
@@ -68,4 +69,3 @@
         });
     </script>
 }
-
