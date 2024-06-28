@@ -17,6 +17,7 @@ namespace Shopping.Data
         public DbSet<Categories>   Categories { get; set; }
         public DbSet<Departments>   Departments { get; set; }
         public DbSet<Eps>   Eps { get; set; }
+        public DbSet<Arl>   Arls { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
