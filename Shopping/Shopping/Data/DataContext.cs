@@ -14,6 +14,10 @@ namespace Shopping.Data
     
         public DbSet<Brand> Brands { get; set; }
 
+        public DbSet<Warehouse> Warehouse { get; set; } 
+
+        public DbSet<Measures> Measures { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

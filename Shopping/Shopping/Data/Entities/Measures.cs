@@ -2,14 +2,18 @@
 
 namespace Shopping.Data.Entities
 {
-    public class Brand
+    public class Measures
     {
         public int Id { get; set; }
-        [Display(Name = "Marca")]
+        [Display(Name = "Medida")]
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener máximo {1} caractéres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
+        public string Name { get; set; }
+        [Display(Name = "Abreviatura")]
+        public string Abbreviation { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
+
 
     }
 }

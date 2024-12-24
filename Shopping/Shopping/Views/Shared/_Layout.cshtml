@@ -20,17 +20,34 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Countries" asp-action="Index">Paises</a>
                         </li> 
-                        <li class="nav-item">
+                       @*  <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Brands" asp-action="Index">Marcas</a>
-                        </li>
+                        </li> *@
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Políticas</a>
                         </li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Almacen
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Warehouses" asp-action="Index">Bodegas</a>
+                                    </li>
+                                <li><a class="dropdown-item" href="#">Items de Ventas</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Brands" asp-action="Index">Marcas</a>
+                                  </li> <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Measures" asp-action="Index">Medidas</a>
+                                  </li>
+
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </div>
