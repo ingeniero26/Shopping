@@ -25,5 +25,8 @@ namespace Shopping.Data
             modelBuilder.Entity<Country>().HasIndex(c => c.Name).IsUnique();
         }
 
+        public DbSet<AddressTypeTable> AddressType { get; set; }
+    
+
     }
 }
